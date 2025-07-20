@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Decision - Conectando Talentos de TI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f5f8fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      color: white;
+      padding: 60px 20px;
+      border-radius: 0 0 40px 40px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .nav-links {
+      margin-top: 30px;
+    }
+    .nav-links a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+    main.container {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+    .feature {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .process-step {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    .process-step:hover {
+      transform: translateY(-4px);
+    }
+    .process-icon {
+      font-size: 2.5rem;
+      color: #0d6efd;
+      margin-bottom: 15px;
+    }
+    footer {
+      padding: 20px 0;
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+      border-top: 1px solid #ddd;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Decision</h1>
+  <p>Conectando talentos qualificados de TI às necessidades específicas dos nossos clientes, com agilidade, precisão e foco na cultura organizacional.</p>
+  <a href="#upload" class="btn btn-light btn-lg">Envie seu currículo</a>
+  <div class="nav-links">
+    <a href="http://35.198.47.221:5000/apidocs/">Documentação</a>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="my-5">
+    <h2 class="text-center mb-4">Nosso Processo de Recrutamento</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="process-step">
+          <div class="process-icon">💬</div>
+          <h5>1. Entrevista pelo Chat</h5>
+          <p>Primeiro contato automatizado com perguntas estratégicas para conhecer seu perfil.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="process-step">
+          <div class="process-icon">📄</div>
+          <h5>2. Triagem de Currículo</h5>
+          <p>Análise inteligente dos dados do seu PDF por algoritmos de machine learning.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="process-step">
+          <div class="process-icon">👥</div>
+          <h5>3. Entrevista com Recrutador</h5>
+          <p>Um especialista da Decision conversa com você para avaliar aspectos técnicos e culturais.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="process-step">
+          <div class="process-icon">🧑‍💼</div>
+          <h5>4. Entrevista com Gestor</h5>
+          <p>Você será avaliado(a) pelo líder direto da área da vaga.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="process-step">
+          <div class="process-icon">🎉</div>
+          <h5>5. Contratação</h5>
+          <p>Parabéns! Se tudo der certo, a próxima etapa é integrar a equipe do cliente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="upload" class="mt-5">
+    <h2 class="text-center mb-4">Envie seu currículo</h2>
+    <form action="/" method="POST" enctype="multipart/form-data" class="text-center">
+      <div class="mb-3">
+        <input class="form-control" type="file" name="cv" accept=".pdf" required />
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar PDF</button>
+    </form>
+    {% if erro %}
+    <div class="text-danger text-center mt-3">{{ erro }}</div>
+    {% endif %}
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 Decision. Todos os direitos reservados.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

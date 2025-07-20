@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Entrevista com a Decision</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #0d6efd;
+    }
+    textarea {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #ced4da;
+      padding: 10px;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 15px;
+      border-radius: 30px;
+    }
+    .mensagem-final {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #198754;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Entrevista Virtual com a Decision</h2>
+
+    {% if pergunta %}
+        <form method="post">
+            <p><strong>Entrevistador:</strong> {{ pergunta }}</p>
+            {% if not is_final %}
+                <textarea name="resposta" rows="4" cols="50" required></textarea><br><br>
+                <button type="submit">Responder</button>
+            {% else %}
+                <button type="submit">Finalizar</button>
+            {% endif %}
+        </form>
+    {% else %}
+        <p>Entrevista concluída.</p>
+    {% endif %}
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
