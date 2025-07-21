@@ -79,7 +79,7 @@ api/
 ##  Instalação e Ambiente Virtual
 
 1️ Crie ambiente virtual:
-```bash
+
 python3 -m venv env
 
 
