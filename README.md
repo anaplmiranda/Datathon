@@ -1,4 +1,4 @@
-# 🧠 Projeto Datathon - Machine Learning Engineering
+#  Projeto Datathon - Machine Learning Engineering
 
 Baseado no estudo de caso da empresa fictícia **Decision**, que atua no setor de bodyshop e possui foco em alocar talentos ideais para os clientes de forma eficiente.
 
@@ -18,14 +18,14 @@ Baseado no estudo de caso da empresa fictícia **Decision**, que atua no setor d
 
 ---
 
-## 📋 Sobre o Projeto
+##  Sobre o Projeto
 
 Este projeto foi desenvolvido em grupo como entrega final do curso **Pós Tech - Machine Learning Engineering (MLET)** da FIAP.  
 Nosso objetivo foi usar Inteligência Artificial para otimizar o processo de recrutamento e seleção da empresa fictícia **Decision**, criando um modelo preditivo que auxilie no match entre candidatos e vagas.
 
 ---
 
-## 🗂 Sumário
+##  Sumário
 
 - [Visão Geral](#🎯-visão-geral)
 - [Estrutura do Projeto](#📁-estrutura-do-projeto)
@@ -38,7 +38,7 @@ Nosso objetivo foi usar Inteligência Artificial para otimizar o processo de rec
 
 ---
 
-## 🎯 Visão Geral
+##  Visão Geral
 
 Desenvolvemos um pipeline completo:
 - Análise exploratória dos dados.
@@ -53,7 +53,7 @@ Desenvolvemos um pipeline completo:
 ---
 
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 notebooks/
   └── parte1_analise_exploratoria.ipynb
   └── parte2_modelagem_inferencia.ipynb
@@ -76,10 +76,10 @@ api/
 
 ---
 
-## 📄 Documentação
+##  Documentação
 
-- 🔗 GitHub Repo: [https://github.com/anaplmiranda/Datathon](https://github.com/anaplmiranda/Datathon)  
-- 🌐 API online: [http://35.198.47.221:5000/](http://35.198.47.221:5000/)  
+-  GitHub Repo: [https://github.com/anaplmiranda/Datathon](https://github.com/anaplmiranda/Datathon)  
+-  API online: [http://35.198.47.221:5000/](http://35.198.47.221:5000/)  
 - API local (Swagger): `http://localhost:8000/docs`
 ---
 
@@ -97,18 +97,18 @@ api/
 
 ## ⚙️ Instalação
 
-1️⃣ Clone o repositório:
+1️ Clone o repositório:
 ```bash
 git clone https://github.com/anaplmiranda/Datathon.git
 cd Datathon
 
-3️⃣ Execute a API localmente:
+3️ Execute a API localmente:
 
 bash
 Copy
 Edit
 uvicorn api.app:app --reload
-4️⃣ Ou execute via Docker:
+4️ Ou execute via Docker:
 
 bash
 Copy
@@ -117,7 +117,7 @@ docker build -t datathon-api .
 docker run -p 8000:8000 datathon-api
 
 
-💻 Uso
+ Uso
 Acesse no navegador (local):
 
 bash
@@ -132,7 +132,7 @@ Edit
 http://35.198.47.221:5000/
 
 
-🌐 Endpoints
+ Endpoints
 POST /predict: Recebe dados JSON e retorna previsão e probabilidade.
 
 Exemplo de corpo JSON:
@@ -146,10 +146,10 @@ Edit
   "..."
 }
 
-💬 Contato
+ Contato
 Grupo: [Adicionar nomes dos participantes]
 
-🛡️ Observação
+ Observação
 Este projeto foi desenvolvido exclusivamente para fins acadêmicos no contexto do Datathon MLET - FIAP.
 
 
