@@ -76,9 +76,9 @@ api/
 
 
 
-## ⚙️ Instalação e Ambiente Virtual
+##  Instalação e Ambiente Virtual
 
-1️⃣ Crie ambiente virtual:
+1️ Crie ambiente virtual:
 ```bash
 python3 -m venv env
 
@@ -123,7 +123,7 @@ docker build -t datathon-api .
 docker run -p 8000:8000 datathon-api
 
 
-💻 Uso
+ Uso
 Acesse local: http://localhost:8000/docs
 
 Produção: http://35.198.47.221:5000/
