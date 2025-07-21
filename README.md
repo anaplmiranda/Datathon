@@ -104,15 +104,11 @@ cd Datathon
 
 3️ Execute a API localmente:
 
-bash
-Copy
-Edit
+
 uvicorn api.app:app --reload
 4️ Ou execute via Docker:
 
-bash
-Copy
-Edit
+
 docker build -t datathon-api .
 docker run -p 8000:8000 datathon-api
 
@@ -120,15 +116,10 @@ docker run -p 8000:8000 datathon-api
  Uso
 Acesse no navegador (local):
 
-bash
-Copy
-Edit
 http://localhost:8000/docs
 Ou use a versão em produção:
 
-cpp
-Copy
-Edit
+
 http://35.198.47.221:5000/
 
 
@@ -137,9 +128,6 @@ POST /predict: Recebe dados JSON e retorna previsão e probabilidade.
 
 Exemplo de corpo JSON:
 
-json
-Copy
-Edit
 {
   "feature1": valor,
   "feature2": valor,
