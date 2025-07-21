@@ -74,7 +74,6 @@ api/
   └── app.py  (ou main.py, conforme usado para rodar a API)
 
 
-
 ---
 
 ## 📄 Documentação
@@ -118,8 +117,6 @@ docker build -t datathon-api .
 docker run -p 8000:8000 datathon-api
 
 
-
-
 💻 Uso
 Acesse no navegador (local):
 
@@ -133,7 +130,6 @@ cpp
 Copy
 Edit
 http://35.198.47.221:5000/
-
 
 
 🌐 Endpoints
