@@ -43,13 +43,15 @@ Nosso objetivo foi usar Inteligência Artificial para otimizar o processo de rec
 Desenvolvemos um pipeline completo:
 - Análise exploratória dos dados.
 - Pré-processamento (incluindo balanceamento com SMOTE).
-- Testes com diferentes modelos (Logistic Regression, Random Forest, XGBoost).
+- Testes com modelos (Logistic Regression, Random Forest, XGBoost).
 - Ajuste de hiperparâmetros.
-- Modelo final: **Random Forest com SMOTE**.
+- Modelo final salvo como **RF_final.pkl**.
 - API FastAPI para receber dados JSON e retornar previsões.
 - Empacotamento com Docker.
+- Deploy disponível online.
 
 ---
+
 
 ## 📁 Estrutura do Projeto
 notebooks/
@@ -77,10 +79,9 @@ api/
 
 ## 📄 Documentação
 
-- GitHub Repo: (https://github.com/anaplmiranda/Datathon/tree/main)
-- API local: `http://localhost:8000/docs` (Swagger FastAPI)
-- Deploy na nuvem (se aplicável): **[link do deploy]**
-
+- 🔗 GitHub Repo: [https://github.com/anaplmiranda/Datathon](https://github.com/anaplmiranda/Datathon)  
+- 🌐 API online: [http://35.198.47.221:5000/](http://35.198.47.221:5000/)  
+- API local (Swagger): `http://localhost:8000/docs`
 ---
 
 ## 🛠 Tecnologias
@@ -99,34 +100,60 @@ api/
 
 1️⃣ Clone o repositório:
 ```bash
-git clone [link do repo]
-cd datathon_mlet
+git clone https://github.com/anaplmiranda/Datathon.git
+cd Datathon
+
+3️⃣ Execute a API localmente:
+
+bash
+Copy
+Edit
+uvicorn api.app:app --reload
+4️⃣ Ou execute via Docker:
+
+bash
+Copy
+Edit
+docker build -t datathon-api .
+docker run -p 8000:8000 datathon-api
 
 
 
 
 💻 Uso
-Acesse no navegador:
+Acesse no navegador (local):
+
+bash
+Copy
+Edit
 http://localhost:8000/docs
+Ou use a versão em produção:
+
+cpp
+Copy
+Edit
+http://35.198.47.221:5000/
 
 
 
 🌐 Endpoints
 POST /predict: Recebe dados JSON e retorna previsão e probabilidade.
 
+Exemplo de corpo JSON:
 
-## ⚙️ Instalação
+json
+Copy
+Edit
+{
+  "feature1": valor,
+  "feature2": valor,
+  "..."
+}
 
-1️⃣ Clone o repositório:
-git clone [link do repo]
-cd datathon_mlet
+💬 Contato
+Grupo: [Adicionar nomes dos participantes]
 
-2️⃣ Instale as dependências:
-pip install -r requirements.txt
+🛡️ Observação
+Este projeto foi desenvolvido exclusivamente para fins acadêmicos no contexto do Datathon MLET - FIAP.
 
-3️⃣ Execute a API localmente:
-uvicorn api.app:app --reload
 
-4️⃣ Ou execute via Docker:
-docker build -t datathon-api .
-docker run -p 8000:8000 datathon-api
