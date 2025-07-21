@@ -27,14 +27,14 @@ Nosso objetivo foi usar Inteligência Artificial para otimizar o processo de rec
 
 ##  Sumário
 
-- [Visão Geral](#🎯-visão-geral)
-- [Estrutura do Projeto](#📁-estrutura-do-projeto)
-- [Documentação](#📄-documentação)
-- [Tecnologias](#🛠-tecnologias)
-- [Instalação](#⚙️-instalação)
-- [Uso](#💻-uso)
-- [Endpoints](#🌐-endpoints)
-- [Contato](#💬-contato)
+- [Visão Geral](#-visão-geral)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Documentação](#-documentação)
+- [Tecnologias](#-tecnologias)
+- [Instalação](#-instalação)
+- [Uso](#-uso)
+- [Endpoints](#-endpoints)
+- [Contato](#-contato)
 
 ---
 
@@ -83,7 +83,7 @@ api/
 - API local (Swagger): `http://localhost:8000/docs`
 ---
 
-## 🛠 Tecnologias
+##  Tecnologias
 
 - Python 3.10
 - FastAPI
@@ -95,7 +95,7 @@ api/
 
 ---
 
-## ⚙️ Instalação
+##  Instalação
 
 1️ Clone o repositório:
 ```bash
