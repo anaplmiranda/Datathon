@@ -102,6 +102,9 @@ api/
 git clone https://github.com/anaplmiranda/Datathon.git
 cd Datathon
 
+Dependencias
+pip install -r requirements.txt
+
 3️ Execute a API localmente:
 
 
