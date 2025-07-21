@@ -77,7 +77,7 @@ api/
 
 ## 📄 Documentação
 
-- GitHub Repo: **[link do repositório]**
+- GitHub Repo: (https://github.com/anaplmiranda/Datathon/tree/main)
 - API local: `http://localhost:8000/docs` (Swagger FastAPI)
 - Deploy na nuvem (se aplicável): **[link do deploy]**
 
