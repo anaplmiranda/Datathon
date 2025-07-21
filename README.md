@@ -74,7 +74,14 @@ api/
   └── app.py  (ou main.py, conforme usado para rodar a API)
 
 
----
+
+
+## ⚙️ Instalação e Ambiente Virtual
+
+1️⃣ Crie ambiente virtual:
+```bash
+python3 -m venv env
+
 
 ##  Documentação
 
@@ -116,14 +123,13 @@ docker build -t datathon-api .
 docker run -p 8000:8000 datathon-api
 
 
- Uso
-Acesse no navegador (local):
+💻 Uso
+Acesse local: http://localhost:8000/docs
 
-http://localhost:8000/docs
-Ou use a versão em produção:
+Produção: http://35.198.47.221:5000/
 
-
-http://35.198.47.221:5000/
+Autenticação:
+Basic Auth (admin / senha)
 
 
  Endpoints
@@ -132,10 +138,10 @@ POST /predict: Recebe dados JSON e retorna previsão e probabilidade.
 Exemplo de corpo JSON:
 
 {
-  "feature1": valor,
-  "feature2": valor,
-  "..."
+  "contratado_predito": 0,
+  "prob_contratacao": 0.3645
 }
+
 
  Contato
 Grupo: [Adicionar nomes dos participantes]
