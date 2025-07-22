@@ -57,12 +57,15 @@ Desenvolvemos um pipeline completo:
 notebooks/
 
   └── parte1_analise_exploratoria.ipynb
+  
   └── parte2_modelagem_inferencia.ipynb
 
 scripts/
 
   └── preprocessamento.py
+  
   └── treinamento.py
+  
   └── inferencia.py
 
 model/
@@ -72,6 +75,7 @@ model/
 data/
 
   └── exemplo_input.json  (ou algum arquivo JSON que você tenha usado nos testes)
+  
   └── predicoes.csv
 
 api/
