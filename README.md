@@ -148,15 +148,11 @@ Na máquina local, rode:
 
 docker run -v /caminho/para/credenciais.json:/app/credenciais.json -p 8000:8000 datathon-api
 ⚠️ Troque /caminho/para/credenciais.json pelo caminho real no seu computador.
-Exemplo:
 
-
-docker run -v /Users/developer/Documents/credenciais.json:/app/credenciais.json -p 8000:8000 datathon-api
+Exemplo:docker run -v /Users/developer/Documents/credenciais.json:/app/credenciais.json -p 8000:8000 datathon-api
 🌐 Passo 3 — Acessar a API
-Abra no navegador:
 
-
-http://localhost:8000/docs
+Abra no navegador:http://localhost:8000/docs
 Aqui você encontrará a interface Swagger para testar os endpoints.
 
 📄 Exemplo completo
