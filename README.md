@@ -180,30 +180,30 @@ Dependencias
       ✅ O caminho /app/credenciais.json é importante porque é onde o código espera encontrar o arquivo dentro do container.
 
 
- Uso
-Acesse local: http://localhost:8000/docs
-
-Produção: http://35.198.47.221:5000/
-
+   Uso
+    Acesse local: http://localhost:8000/docs
+    
+    Produção: http://35.198.47.221:5000/
+  
 Autenticação:
-Basic Auth (admin / senha)
+    Basic Auth (admin / senha)
 
 
  Endpoints
-POST /predict: Recebe dados JSON e retorna previsão e probabilidade.
+    POST /predict: Recebe dados JSON e retorna previsão e probabilidade.
 
 Exemplo de corpo JSON:
 
-{
-  "contratado_predito": 0,
-  "prob_contratacao": 0.3645
-}
+    {
+      "contratado_predito": 0,
+      "prob_contratacao": 0.3645
+    }
 
 
  Contato
-Grupo: [Adicionar nomes dos participantes]
+    Grupo: [Adicionar nomes dos participantes]
 
  Observação
-Este projeto foi desenvolvido exclusivamente para fins acadêmicos no contexto do Datathon MLET - FIAP.
+  Este projeto foi desenvolvido exclusivamente para fins acadêmicos no contexto do Datathon MLET - FIAP.
 
 
