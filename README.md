@@ -105,7 +105,7 @@ python3 -m venv env
 ##  Instalação
 
 1️ Clone o repositório:
-```bash
+
 git clone https://github.com/anaplmiranda/Datathon.git
 cd Datathon
 
@@ -119,8 +119,70 @@ uvicorn api.app:app --reload
 4️ Ou execute via Docker:
 
 
+## 🐳 Docker — Como rodar a aplicação
+
+### 📦 Pré-requisitos
+
+- Ter o Docker instalado no computador.
+  [Download aqui](https://www.docker.com/products/docker-desktop)
+
+- Ter o arquivo de credenciais do Google BigQuery:
+credenciais.json
+
+yaml
+Copy
+Edit
+
+---
+
+### 🛠️ Passo 1 — Criar imagem Docker
+
+Dentro da pasta do projeto (`API_RECRUTAMENTO`):
+
 docker build -t datathon-api .
-docker run -p 8000:8000 datathon-api
+Isso cria a imagem chamada datathon-api.
+
+🛠️ Passo 2 — Rodar o container com credenciais
+Na máquina local, rode:
+
+
+docker run -v /caminho/para/credenciais.json:/app/credenciais.json -p 8000:8000 datathon-api
+⚠️ Troque /caminho/para/credenciais.json pelo caminho real no seu computador.
+Exemplo:
+
+
+docker run -v /Users/developer/Documents/credenciais.json:/app/credenciais.json -p 8000:8000 datathon-api
+🌐 Passo 3 — Acessar a API
+Abra no navegador:
+
+
+http://localhost:8000/docs
+Aqui você encontrará a interface Swagger para testar os endpoints.
+
+📄 Exemplo completo
+
+docker build -t datathon-api .
+docker run -v /Users/developer/Documents/credenciais.json:/app/credenciais.json -p 8000:8000 datathon-api
+🧹 Comandos úteis
+Ver containers rodando:
+
+
+docker ps
+Parar um container:
+
+
+docker stop <container_id>
+Ver imagens disponíveis:
+
+
+docker images
+Remover imagem:
+
+
+docker rmi datathon-api
+💡 Observação
+✅ O arquivo credenciais.json não está embutido na imagem Docker — ele é montado como volume externo para segurança.
+✅ O caminho /app/credenciais.json é importante porque é onde o código espera encontrar o arquivo dentro do container.
 
 
  Uso
